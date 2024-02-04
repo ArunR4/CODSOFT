@@ -1,0 +1,26 @@
+.steps-card-single{
+    width: 430px;
+    height: 270px;
+    text-align: center;
+}
+
+.steps-card-single img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 20px;
+}
+
+.steps-card-single h5{
+    color: var(--primary);
+    margin: 0;
+}
+
+.steps-card-single h2{
+    margin: 5px;
+}
+
+.steps-card-single h3{
+    margin: 0;
+    font-size: 1.1rem;
+}

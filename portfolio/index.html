@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile.css" />
+    <link rel="icon" href="./assest/icon.png" type="image/x-icon">
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/218a4e0ef4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="first">
+        <nav>
+            <div class="logo">
+                <span><img src="./assest/logo.png" /></span>
+                <h1>Arun</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#home" onclick="toggleMenu()">Home</a>
+                <a href="#about" onclick="toggleMenu()">About</a>
+                <a href="#projects" onclick="toggleMenu()">Projects</a>
+                <a href="#skills" onclick="toggleMenu()">Skills</a>
+                <a href="#contact" onclick="toggleMenu()">Contact</a>
+            </div>
+            <div class="mobile-nav-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <section class="home" id="home">
+            <span class="pin"><img src="./assest/pin.png" /></span>
+            <div class="left">
+                <div class="head">
+                    <h1>Hello,</h1>
+                    <h1>I'm</h1>
+                    <h1>Arun</h1>
+                    <h1>a</h1>
+                    <h1>Web</h1>
+                    <h1>Developer</h1>
+                </div>
+
+                <p>
+                    I am a dedicated React developer with expertise in creating dynamic and responsive web applications.
+                    Proficient in Node.js and API integration, I excel in crafting seamless user experiences through
+                    innovative front-end solutions. Committed to delivering high-quality projects that align with client
+                    objectives and industry standards.
+                </p>
+
+                <div class="btns">
+                    <button class="btn" onclick="window.open('./assest/Arun.pdf')">Resume</button>
+                    <button class="btn" onclick="document.getElementById('contact').scrollIntoView()">Contact</button>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="imgs">
+                    <img src="./assest/circle.png" />
+                    <img src="./assest/logoman1.png" />
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="about" id="about">
+        <div class="about-container">
+            <span><img src="./assest/pin2.png"></span>
+            <div class="right right-pic">
+                <div class="imgs">
+                    <img src="./assest/circle2.png" />
+                    <img src="./assest/photo.png" />
+                </div>
+            </div>
+            <div class="about-right">
+                <h1>About Me</h1>
+                <p>I am a dedicated React developer with expertise in creating dynamic and responsive web applications.
+                    Proficient in Node.js and API integration, I excel in crafting seamless user experiences through
+                    innovative front-end solutions. Committed to delivering high-quality projects that align with client
+                    objectives and industry standards.<br> <br>
+                    I am currently pursuing my B.Tech(IT) course at Anjalai Ammal Mahalingam Engineering College.
+                    My work is driven by the belief that exceptional design can have profound impact on the way people
+                    ineract with technology.
+                </p>
+                <div class="btns">
+                    <a href="https://github.com/ArunR4"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ArunR4"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="discordapp.com/users/722069057167425587"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="projects" id="projects">
+        <div class="project">
+            <div class="project-head">
+                <h1>Projects</h1>
+                <p>Here you will find some of my personal project that i created with each project
+                    containing
+                    its own live demo</p>
+            </div>
+            <div class="card reveal">
+                <div class="card-left">
+                    <h1>Expense Tracker</h1>
+                    <p>Developed a responsive web application for track expenses in
+                        our day-to-day using React JS and Redux JS.Redux JS is to used to inter component state
+                        management and
+                        user data are stored in the local storage.
+                    </p>
+                    <a href="https://arunr4.github.io/Expense-Tracker/" target="_blank">Live Demo <i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="imgs">
+                    <img src="./assest/project1.png" alt="Project">
+                </div>
+            </div>
+            <hr class="break" />
+            <div class="card reveal">
+                <div class="card-left">
+                    <h1>Home Drive</h1>
+                    <p>Created a cloud storage system for storing personal details, The data are stored in the AWS cloud
+                        securely using node js and express js and for the frontend all the files are aligned
+                        responsively by react js.</p>
+                    <a href="https://awsf-6b943.web.app/" target="_blank">Live Demo <i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="imgs">
+                    <img src="./assest/project2.png" alt="Project">
+                </div>
+            </div>
+            <hr class="break" />
+            <div class="card reveal">
+                <div class="card-left">
+                    <h1>Food Recipe App</h1>
+                    <p>Developed a Food Recipe App using ReactJS witch fetch Data
+                        from EDAMAN Recipe Search APIs.Included specific Recipe Search functionality and also filtered
+                        by
+                        health lables like Vegeterian, Egg-free, Sugar-free, etc.
+                        The Data are fetched and posted using Axios library.</p>
+                    <a href="https://recipeapp-ee777.web.app/" target="_blank">Live Demo <i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="imgs">
+                    <img src="./assest/project3.png" alt="Project">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <div class="skill">
+            <h1>Skills</h1>
+            <img src="./assest/pin3.png" class="pin3">
+            <div class="skill-list">
+                <h2>C</h2>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="70"></div>
+                </div>
+            </div>
+            <div class="skill-list">
+                <h2>Java, Python</h2>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="75"></div>
+                </div>
+            </div>
+            <div class="skill-list">
+                <h2>HTML, CSS</h2>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="90"></div>
+                </div>
+            </div>
+            <div class="skill-list">
+                <h2>Java Script, React Js</h2>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="85"></div>
+                </div>
+            </div>
+            <div class="skill-list">
+                <h2>Express Js, Node Js</h2>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="65"></div>
+                </div>
+            </div>
+            <div class="skill-list">
+                <h2>Mysql, Sqlite3</h2>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="65"></div>
+                </div>
+            </div>
+            <div class="skill-list">
+                <h2>AWS, Firebase, MongoDB</h2>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="55"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="contact-main">
+            <div class="left-contact">
+                <h1>Let's chat.</h1>
+                <h1>Tell me about your project.</h1>
+                <p>Let's create something together ⭐</p>
+            </div>
+            <div class="right-contact">
+                <form>
+                    <h2>Send me a message🚀</h2>
+                    <input type="text" name="name" id="name" placeholder="Name*" required>
+                    <input type="email" name="email" id="email" placeholder="Email*" required>
+                    <input type="text" name="sub" id="sub" placeholder="Subject*" required>
+                    <div class="text">
+                        <p>Type your message here<sup>*</sup></p>
+                        <textarea name="msg" id="msg" placeholder="Message"></textarea>
+                    </div>
+                    <button class="btn-send" type="submit">Send message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="foot-out">
+        <div class="footer">
+            <div class="first-footer">
+                <h1>LET'S WORK TOGETHER</h1>
+                <span class="pin4"><img src="./assest/pin4.png"></span>
+                <button class="footer-btn" onclick="document.getElementById('contact').scrollIntoView()">Let's
+                    Talk</button>
+            </div>
+
+            <div class="second-footer">
+                <div class="foot-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="foot-num">
+                    <a href="tel:+919344574609">Phone: 9344574609</a>
+                    <span class="split"></span>
+                    <a href="mailto:arunramanmurthy@gmail.com">Mail: arunramanmurthy@gmail.com</a>
+                </div>
+            </div>
+            <hr>
+            <div class="third-footer">
+                <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 Arun. All rights reserved</p>
+                <div class="btns">
+                    <a href="https://github.com/ArunR4"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ArunR4"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="discordapp.com/users/722069057167425587"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="back-up"><i class="fa-solid fa-circle-up"></i></a>
+
+    <script>
+        const toggleMenu = () => {
+            const menu = document.querySelector('.mobile-nav-icon');
+            const icon = document.querySelector('.nav-links');
+            menu.classList.toggle("open");
+            icon.classList.toggle("open");
+        }
+        window.addEventListener('scroll', () => {
+            var reveals = document.querySelectorAll('.reveal');
+            let revealPoint = 150;
+            for (let i = 0; i < reveals.length; i++) {
+                let winHeight = window.innerHeight;
+                let revealTop = reveals[i].getBoundingClientRect().top;
+
+                if (revealTop < winHeight - revealPoint) {
+                    reveals[i].classList.add("alive")
+                }
+                else {
+                    reveals[i].classList.remove('alive')
+                }
+            }
+        });
+
+        const skillSection = document.getElementById('skills')
+        const progressBars = document.querySelectorAll('.progress')
+
+        window.addEventListener('scroll', () => {
+            let skillPos = skillSection.getBoundingClientRect().top;
+            let screenPos = window.innerHeight;
+            if (skillPos < screenPos) {
+                progressBars.forEach(el => {
+                    const value = el.dataset.progress;
+                    el.style.width = `${value}%`;
+                })
+            }
+            else {
+                progressBars.forEach(el => {
+                    el.style.width = 0;
+                })
+            }
+        })
+
+        document.querySelector('form').addEventListener("submit", e => {
+            e.preventDefault();
+            submit();
+        })
+
+        const submit = () => {
+            const name = document.getElementById('name').value
+            const email = document.getElementById('email').value
+            const sub = document.getElementById('sub').value
+            const msg = document.getElementById('msg').value
+
+            let bodyMsg = `Name: ${name}<br>Email: ${email}<br><br><br>${msg}`
+
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "siddartharun13@gmail.com",
+                Password: "8501D8B9BA3FA8527064C5ED08F06F6CF82C",
+                To: 'siddartharun13@gmail.com',
+                From: "siddartharun13@gmail.com",
+                Subject: sub,
+                Body: bodyMsg
+            }).then(
+                message => swal({
+                    title: "Thank you",
+                    text: "Your Message Sent successfully",
+                    icon: "success",
+                })
+            );
+
+            document.getElementById('name').value = ""
+            document.getElementById('email').value = ""
+            document.getElementById('sub').value = ""
+            document.getElementById('msg').value = ""
+        }
+
+        window.addEventListener('scroll', () => {
+            let about = document.getElementById('about').getBoundingClientRect().top;;
+            let winHeight = window.innerHeight;
+            let scroll = document.querySelector('.back-up')
+
+            if (about < winHeight - 200)
+                scroll.classList.add('show')
+            else
+                scroll.classList.remove('show')
+        })
+    </script>
+</body>
+
+</html>

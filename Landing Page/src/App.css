@@ -1,0 +1,315 @@
+:root{
+    --primary: #F97316;
+    --secondary: #1C1917;
+}
+
+.App{
+    width: 100vw;
+}
+
+.header{
+    height: 10vh;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header input, .contact-left input, .footer-mail-input input{
+    font-size: 1rem;
+    padding: 5px;
+    padding-left: 10px;
+    height: 50%;
+    width: 75%;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.header select{
+    font-size: 15px;
+    height: 50%;
+    width: 130px;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.header button{
+    font-size: 15px;
+    height: 60%;
+    border: none;
+    padding: 5px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: white;
+    font-weight: 400;
+}
+
+/* main */
+.main{
+    height: 90vh;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.left{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.left h1, .foods h1, .steps h1, .join h1, .contact-left h1{
+    line-height: 85px;
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.left h1{font-size: 5rem;}
+
+.left h3, .foods h3 ,.steps h3, .join h3, .contact-left h3, .contact-right h3, .footer-link div a, .footer-mail h3, .footer-mail .term a{
+    font-size: 1.1rem;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+.left h3, .steps h3, .join h3{margin-top: 0;font-size: 1.4rem;}
+
+.left button,.join button, .contact-input button, .footer-mail-input button{
+    border: none;
+    padding: 5px;
+    height: 70px;
+    width: 75%;
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.right{
+    height: 98%;
+    width: 50%;
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+    object-fit: fit;
+}
+
+/* foods */
+.foods{
+    width: 95%;
+    min-height: 110vh;
+    margin: auto;
+    margin-top: 20vh;
+}
+
+.foods .cards{
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* steps */
+.steps{
+    width: 95%;
+    margin: auto;
+    margin-top: 20vh;
+}
+
+.steps h1, .steps h3{
+    text-align: center;
+    margin-top: 0px;
+}
+
+.steps h3{
+    margin-top: 1rem;
+}
+
+.steps-card{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* join */
+.join{
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    margin-top: 35vh;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.join h1, .join h3{
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.join h3{
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+.join button{
+    margin-top: 40px;
+    width: 170px;
+}
+
+/* contact  */
+.contact{
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-left{
+    width: 40%;
+}
+
+.contact-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 80px;
+}
+
+.contact-input input{
+    width: 60%;
+}
+
+.contact-input button{
+    height: 50px;
+    width: 27%;
+}
+
+.contact-right{
+    width: 56%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 3rem;
+    background-color: #FAFAF9;
+}
+
+.contact-right div{
+    width: 70%;
+}
+
+.contact-right div img{
+    margin: 0;
+    width: 35px;
+    height: 35px;
+    object-fit: fill;
+}
+
+.contact-right h2{
+    font-weight: 600;
+    opacity: 0.85;
+    margin: 0;
+}
+
+.contact-right h3{
+    margin: 0;
+}
+
+/* footer  */
+.footer{
+    height: 40vh;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.footer-link{
+    width: 60%;
+    display: flex;
+    gap: 10rem;
+}
+
+.footer-link div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-link div h2, .footer-mail h2{
+    font-weight: 600;
+    opacity: 0.85;
+}
+
+.footer-link div a, .footer-mail .term a{
+    text-decoration: none;
+    opacity: 0.6;
+    color: black;
+    transition: all 300ms ease;
+}
+
+.footer-link div a:hover{
+    color: var(--primary);
+}
+
+.footer-mail{
+    width: 25%;
+}
+
+.footer-mail-input{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-mail-input input{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 70%;
+    height: 80%;
+}
+
+.footer-mail-input button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 25%;
+    height: 100%;
+}
+
+.footer-mail .term{
+    margin-top: 2rem;
+}
+
+.footer-mail .term a{
+    font-size: 1rem;
+    margin-right: 2rem;
+}
